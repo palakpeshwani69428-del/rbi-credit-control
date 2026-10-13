@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Methods of Credit Control by RBI - Slide 14</title>
+    <!-- Google Fonts - Inter for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            height: 1080px;
+            width: 1920px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <style>
+* { font-family:'Inter',sans-serif; box-sizing:border-box; margin:0; padding:0; }
+@keyframes fadeInDown { from{opacity:0;transform:translateY(-35px);}to{opacity:1;transform:translateY(0);} }
+@keyframes fadeInLeft { from{opacity:0;transform:translateX(-50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0;transform:translateX(50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes float      { 0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 40px rgba(59,130,246,0.5);}50%{box-shadow:0 0 80px rgba(59,130,246,0.9);} }
+@keyframes stepIn     { from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);} }
+.slide { width:1920px; height:1080px; background:linear-gradient(135deg,#050e3a 0%,#0d1a5c 30%,#1a0d5a 60%,#0a0520 100%); position:relative; overflow:hidden; }
+.orb1 { position:absolute; width:650px; height:650px; border-radius:50%; background:radial-gradient(circle,rgba(59,130,246,0.22) 0%,transparent 70%); top:-160px; right:-100px; animation:float 9s ease-in-out infinite; }
+.orb2 { position:absolute; width:450px; height:450px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.16) 0%,transparent 70%); bottom:-100px; left:-60px; animation:float 11s ease-in-out infinite reverse; }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(100,80,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(100,80,200,0.06) 1px,transparent 1px); background-size:90px 90px; }
+.top-bar { position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg,#3b82f6,#7c3aed,#2563eb,#a855f7); }
+.header { position:absolute; top:34px; left:80px; right:80px; display:flex; align-items:center; gap:28px; animation:fadeInDown 0.8s ease-out 0.2s both; }
+.method-badge { width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#7c3aed); display:flex; align-items:center; justify-content:center; font-size:38px; animation:pulse-glow 3s ease-in-out infinite; border:2px solid rgba(147,197,253,0.4); flex-shrink:0; }
+.method-num { font-size:22px; color:rgba(147,197,253,0.7); font-weight:600; letter-spacing:3px; text-transform:uppercase; }
+.method-title { font-size:64px; font-weight:900; background:linear-gradient(135deg,#93c5fd,#c4b5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.content-grid { position:absolute; top:158px; left:80px; right:80px; bottom:32px; display:flex; gap:40px; }
+.left { flex:1.3; background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(147,197,253,0.2); border-radius:24px; padding:36px 40px; box-shadow:0 8px 50px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.08); animation:fadeInLeft 0.9s ease-out 0.4s both; }
+.def-box { background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); border-radius:18px; padding:24px 28px; margin-bottom:22px; }
+.def-label { font-size:22px; font-weight:800; color:#93c5fd; margin-bottom:10px; }
+.def-text { font-size:26px; color:rgba(220,210,255,0.9); line-height:1.65; }
+.actions-title { font-size:26px; font-weight:800; color:rgba(147,197,253,0.85); margin-bottom:16px; letter-spacing:1px; }
+.action-item { display:flex; align-items:flex-start; gap:16px; margin-bottom:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(147,197,253,0.1); border-radius:14px; padding:16px 20px; }
+.action-icon { font-size:30px; flex-shrink:0; }
+.action-text { font-size:24px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.right { flex:1; display:flex; flex-direction:column; gap:20px; animation:fadeInRight 0.9s ease-out 0.5s both; }
+.escalation-glass { background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(147,197,253,0.2); border-radius:22px; padding:28px 32px; box-shadow:0 4px 30px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.07); }
+.esc-label { font-size:24px; font-weight:800; color:#93c5fd; margin-bottom:18px; }
+.esc-step { display:flex; align-items:center; gap:14px; margin-bottom:13px; }
+.esc-step:nth-child(2){animation:stepIn 0.5s ease-out 0.6s both;} .esc-step:nth-child(3){animation:stepIn 0.5s ease-out 0.75s both;} .esc-step:nth-child(4){animation:stepIn 0.5s ease-out 0.9s both;} .esc-step:nth-child(5){animation:stepIn 0.5s ease-out 1.05s both;} .esc-step:nth-child(6){animation:stepIn 0.5s ease-out 1.2s both;}
+.esc-num { width:38px; height:38px; border-radius:50%; background:rgba(59,130,246,0.35); border:1.5px solid rgba(59,130,246,0.5); color:#93c5fd; font-size:20px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.esc-text { font-size:23px; color:rgba(210,200,255,0.88); font-weight:600; flex:1; }
+.esc-arrow { font-size:22px; color:rgba(147,197,253,0.5); }
+.last-resort { background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); border-radius:18px; padding:22px 28px; }
+.lr-title { font-size:24px; font-weight:800; color:#fca5a5; margin-bottom:10px; }
+.lr-text { font-size:23px; color:rgba(210,200,255,0.88); line-height:1.6; }
+</style>
+<div class="slide">
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div><div class="top-bar"></div>
+<div class="header">
+<div class="method-badge">&#9878;&#65039;</div>
+<div><div class="method-num">Qualitative Method &#8212; 04</div><div class="method-title">Direct Action</div></div>
+</div>
+<div class="content-grid">
+<div class="left">
+<div class="def-box"><div class="def-label">&#128214; Definition</div><div class="def-text">Direct Action is the <strong style="color:#c4b5fd">most coercive and powerful</strong> qualitative credit control tool, used by the RBI when commercial banks fail to comply with its guidelines, directives, or policies. It involves direct punitive measures against non-compliant banks.</div></div>
+<div class="actions-title">&#9889; Forms of Direct Action</div>
+<div class="action-item"><div class="action-icon">&#128683;</div><div class="action-text"><strong style="color:#c4b5fd">Refusal to Rediscount:</strong> RBI refuses to rediscount bills of exchange or provide credit facilities to non-compliant banks</div></div>
+<div class="action-item"><div class="action-icon">&#128184;</div><div class="action-text"><strong style="color:#c4b5fd">Penal Interest Rate:</strong> RBI charges a penalty rate above the Bank Rate for credit demanded beyond prescribed limits</div></div>
+<div class="action-item"><div class="action-icon">&#128203;</div><div class="action-text"><strong style="color:#c4b5fd">Restriction of Credit:</strong> RBI restricts or withdraws credit facilities from banks violating norms</div></div>
+<div class="action-item"><div class="action-icon">&#128274;</div><div class="action-text"><strong style="color:#c4b5fd">Cancellation of License:</strong> In extreme cases, RBI can cancel a bank's license or order its closure</div></div>
+</div>
+<div class="right">
+<div class="escalation-glass">
+<div class="esc-label">&#128200; Escalation Ladder</div>
+<div class="esc-step"><div class="esc-num">1</div><div class="esc-text">Moral Suasion (Advice &amp; Persuasion)</div><div class="esc-arrow">&#8594;</div></div>
+<div class="esc-step"><div class="esc-num">2</div><div class="esc-text">Written Warnings &amp; Directives</div><div class="esc-arrow">&#8594;</div></div>
+<div class="esc-step"><div class="esc-num">3</div><div class="esc-text">Penal Interest Rates</div><div class="esc-arrow">&#8594;</div></div>
+<div class="esc-step"><div class="esc-num">4</div><div class="esc-text">Refusal of Rediscounting</div><div class="esc-arrow">&#8594;</div></div>
+<div class="esc-step"><div class="esc-num">5</div><div class="esc-text">License Cancellation / Closure</div></div>
+</div>
+<div class="last-resort"><div class="lr-title">&#9888;&#65039; Last Resort Tool</div><div class="lr-text">Direct Action is used as a <strong style="color:#fca5a5">last resort</strong> when all other methods fail. It is not used in isolation &#8212; it supplements other credit control measures and is invoked only when banks persistently violate RBI norms.</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>

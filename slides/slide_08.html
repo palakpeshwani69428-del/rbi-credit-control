@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Methods of Credit Control by RBI - Slide 8</title>
+    <!-- Google Fonts - Inter for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            height: 1080px;
+            width: 1920px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <style>
+* { font-family:'Inter',sans-serif; box-sizing:border-box; margin:0; padding:0; }
+@keyframes fadeInDown { from{opacity:0;transform:translateY(-35px);}to{opacity:1;transform:translateY(0);} }
+@keyframes fadeInLeft { from{opacity:0;transform:translateX(-50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0;transform:translateX(50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes float      { 0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 40px rgba(124,58,237,0.5);}50%{box-shadow:0 0 80px rgba(124,58,237,0.9);} }
+@keyframes countUp    { from{opacity:0;transform:scale(0.7);}to{opacity:1;transform:scale(1);} }
+.slide { width:1920px; height:1080px; background:linear-gradient(135deg,#0a0520 0%,#130840 30%,#1a0d5a 60%,#050e3a 100%); position:relative; overflow:hidden; }
+.orb1 { position:absolute; width:650px; height:650px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.22) 0%,transparent 70%); top:-160px; right:-100px; animation:float 9s ease-in-out infinite; }
+.orb2 { position:absolute; width:450px; height:450px; border-radius:50%; background:radial-gradient(circle,rgba(59,130,246,0.16) 0%,transparent 70%); bottom:-100px; left:-60px; animation:float 11s ease-in-out infinite reverse; }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(100,80,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(100,80,200,0.06) 1px,transparent 1px); background-size:90px 90px; }
+.top-bar { position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg,#7c3aed,#3b82f6,#a855f7,#2563eb); }
+.header { position:absolute; top:34px; left:80px; right:80px; display:flex; align-items:center; gap:28px; animation:fadeInDown 0.8s ease-out 0.2s both; }
+.method-badge { width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#3b82f6); display:flex; align-items:center; justify-content:center; font-size:38px; animation:pulse-glow 3s ease-in-out infinite; border:2px solid rgba(167,139,250,0.4); flex-shrink:0; }
+.method-num { font-size:22px; color:rgba(167,139,250,0.7); font-weight:600; letter-spacing:3px; text-transform:uppercase; }
+.method-title { font-size:64px; font-weight:900; background:linear-gradient(135deg,#c4b5fd,#93c5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.content-grid { position:absolute; top:158px; left:80px; right:80px; bottom:32px; display:flex; gap:40px; }
+.left { flex:1.3; background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(167,139,250,0.2); border-radius:24px; padding:36px 40px; box-shadow:0 8px 50px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.08); animation:fadeInLeft 0.9s ease-out 0.4s both; }
+.full-form { font-size:24px; color:rgba(167,139,250,0.8); margin-bottom:20px; font-weight:500; }
+.def-box { background:rgba(124,58,237,0.12); border:1px solid rgba(124,58,237,0.3); border-radius:18px; padding:24px 28px; margin-bottom:20px; }
+.def-label { font-size:22px; font-weight:800; color:#c4b5fd; margin-bottom:10px; }
+.def-text { font-size:26px; color:rgba(220,210,255,0.9); line-height:1.65; }
+.how-works { background:rgba(59,130,246,0.1); border:1px solid rgba(59,130,246,0.25); border-radius:16px; padding:20px 26px; margin-bottom:20px; }
+.how-title { font-size:23px; font-weight:800; color:#93c5fd; margin-bottom:10px; }
+.how-text { font-size:23px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.point { display:flex; align-items:flex-start; gap:16px; margin-bottom:14px; }
+.point-dot { width:13px; height:13px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#3b82f6); flex-shrink:0; margin-top:9px; }
+.point-text { font-size:24px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.right { flex:1; display:flex; flex-direction:column; gap:18px; animation:fadeInRight 0.9s ease-out 0.5s both; }
+.rate-card { background:rgba(124,58,237,0.18); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:2px solid rgba(124,58,237,0.45); border-radius:24px; padding:28px 36px; text-align:center; box-shadow:0 0 50px rgba(124,58,237,0.25),inset 0 1px 0 rgba(255,255,255,0.08); animation:countUp 0.8s ease-out 0.8s both; }
+.rate-label { font-size:24px; color:rgba(196,181,253,0.8); font-weight:600; margin-bottom:8px; }
+.rate-value { font-size:84px; font-weight:900; background:linear-gradient(135deg,#c4b5fd,#93c5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; margin-bottom:8px; }
+.rate-note { font-size:20px; color:rgba(167,139,250,0.65); }
+.effect-card { background:rgba(255,255,255,0.05); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-radius:18px; padding:22px 26px; box-shadow:0 4px 24px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.06); }
+.effect-up { border:1px solid rgba(34,197,94,0.35); }
+.effect-down { border:1px solid rgba(59,130,246,0.35); }
+.effect-title { font-size:23px; font-weight:800; margin-bottom:10px; }
+.effect-up .effect-title { color:#86efac; }
+.effect-down .effect-title { color:#93c5fd; }
+.effect-text { font-size:22px; color:rgba(210,200,255,0.85); line-height:1.55; }
+.corridor-note { background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.3); border-radius:16px; padding:18px 24px; }
+.corridor-text { font-size:22px; color:rgba(210,200,255,0.88); line-height:1.6; }
+</style>
+<div class="slide">
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div><div class="top-bar"></div>
+<div class="header">
+<div class="method-badge">&#128260;</div>
+<div><div class="method-num">Quantitative Method &#8212; 05</div><div class="method-title">Repo Rate</div></div>
+</div>
+<div class="content-grid">
+<div class="left">
+<div class="full-form">&#128204; Full Form: <strong style="color:#93c5fd">Repurchase Agreement Rate</strong></div>
+<div class="def-box"><div class="def-label">&#128214; Definition</div><div class="def-text">Repo Rate is the <strong style="color:#c4b5fd">rate at which the RBI lends short-term funds</strong> to commercial banks against the collateral of government securities, with an agreement to repurchase them at a predetermined price. It is the <strong style="color:#c4b5fd">key policy rate</strong> of the RBI.</div></div>
+<div class="how-works"><div class="how-title">&#9881;&#65039; How It Works</div><div class="how-text">Banks sell government securities to RBI and receive funds &#8594; They agree to buy back the securities at a future date &#8594; The difference in price represents the Repo Rate interest</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Repo Rate is always <strong style="color:#c4b5fd">higher</strong> than Reverse Repo Rate</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">It is the <strong style="color:#c4b5fd">benchmark rate</strong> &#8212; changes directly affect home loans, car loans, and all EMIs</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Reviewed by the Monetary Policy Committee (MPC) at least 4 times a year</div></div>
+</div>
+<div class="right">
+<div class="rate-card"><div class="rate-label">Current Repo Rate (2026)</div><div class="rate-value">5.25%</div><div class="rate-note">As per MPC Review &#8212; February 2026</div></div>
+<div class="effect-card effect-up"><div class="effect-title">&#128200; Repo Rate &#8593; (Hawkish)</div><div class="effect-text">Borrowing from RBI becomes costly &#8594; Banks raise lending rates &#8594; Loans become expensive &#8594; Demand falls &#8594; Inflation controlled</div></div>
+<div class="effect-card effect-down"><div class="effect-title">&#128201; Repo Rate &#8595; (Dovish)</div><div class="effect-text">Borrowing from RBI becomes cheaper &#8594; Banks lower lending rates &#8594; Loans become affordable &#8594; Demand rises &#8594; Growth stimulated</div></div>
+<div class="corridor-note"><div class="corridor-text">&#127963; <strong style="color:#c4b5fd">Policy Corridor:</strong> Repo Rate forms the <em>middle</em> of RBI's interest rate corridor, with MSF (5.50%) as the ceiling and SDF (5.00%) as the floor.</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>

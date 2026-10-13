@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Methods of Credit Control by RBI - Slide 7</title>
+    <!-- Google Fonts - Inter for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            height: 1080px;
+            width: 1920px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <style>
+* { font-family:'Inter',sans-serif; box-sizing:border-box; margin:0; padding:0; }
+@keyframes fadeInDown { from{opacity:0;transform:translateY(-35px);}to{opacity:1;transform:translateY(0);} }
+@keyframes fadeInLeft { from{opacity:0;transform:translateX(-50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0;transform:translateX(50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes float      { 0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 40px rgba(124,58,237,0.5);}50%{box-shadow:0 0 80px rgba(124,58,237,0.9);} }
+@keyframes countUp    { from{opacity:0;transform:scale(0.7);}to{opacity:1;transform:scale(1);} }
+.slide { width:1920px; height:1080px; background:linear-gradient(135deg,#0a0520 0%,#130840 30%,#1a0d5a 60%,#050e3a 100%); position:relative; overflow:hidden; }
+.orb1 { position:absolute; width:650px; height:650px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.22) 0%,transparent 70%); top:-160px; right:-100px; animation:float 9s ease-in-out infinite; }
+.orb2 { position:absolute; width:450px; height:450px; border-radius:50%; background:radial-gradient(circle,rgba(59,130,246,0.16) 0%,transparent 70%); bottom:-100px; left:-60px; animation:float 11s ease-in-out infinite reverse; }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(100,80,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(100,80,200,0.06) 1px,transparent 1px); background-size:90px 90px; }
+.top-bar { position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg,#7c3aed,#3b82f6,#a855f7,#2563eb); }
+.header { position:absolute; top:34px; left:80px; right:80px; display:flex; align-items:center; gap:28px; animation:fadeInDown 0.8s ease-out 0.2s both; }
+.method-badge { width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#3b82f6); display:flex; align-items:center; justify-content:center; font-size:38px; animation:pulse-glow 3s ease-in-out infinite; border:2px solid rgba(167,139,250,0.4); flex-shrink:0; }
+.method-num { font-size:22px; color:rgba(167,139,250,0.7); font-weight:600; letter-spacing:3px; text-transform:uppercase; }
+.method-title { font-size:64px; font-weight:900; background:linear-gradient(135deg,#c4b5fd,#93c5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.content-grid { position:absolute; top:158px; left:80px; right:80px; bottom:32px; display:flex; gap:40px; }
+.left { flex:1.3; background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(167,139,250,0.2); border-radius:24px; padding:36px 40px; box-shadow:0 8px 50px rgba(0,0,0,0.35),inset 0 1px 0 rgba(255,255,255,0.08); animation:fadeInLeft 0.9s ease-out 0.4s both; }
+.def-box { background:rgba(59,130,246,0.1); border:1px solid rgba(59,130,246,0.3); border-radius:18px; padding:24px 28px; margin-bottom:22px; }
+.def-label { font-size:22px; font-weight:800; color:#93c5fd; margin-bottom:10px; }
+.def-text { font-size:26px; color:rgba(220,210,255,0.9); line-height:1.65; }
+.assets-box { background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.25); border-radius:16px; padding:18px 24px; margin-bottom:20px; }
+.assets-label { font-size:22px; font-weight:800; color:#c4b5fd; margin-bottom:12px; }
+.asset-chips { display:flex; gap:10px; flex-wrap:wrap; }
+.asset-chip { padding:10px 22px; border-radius:30px; font-size:21px; font-weight:700; background:rgba(124,58,237,0.2); border:1.5px solid rgba(124,58,237,0.4); color:#c4b5fd; }
+.point { display:flex; align-items:flex-start; gap:16px; margin-bottom:14px; }
+.point-dot { width:13px; height:13px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#3b82f6); flex-shrink:0; margin-top:9px; }
+.point-text { font-size:24px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.right { flex:1; display:flex; flex-direction:column; gap:20px; animation:fadeInRight 0.9s ease-out 0.5s both; }
+.rate-card { background:rgba(59,130,246,0.18); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:2px solid rgba(59,130,246,0.45); border-radius:24px; padding:32px 36px; text-align:center; box-shadow:0 0 50px rgba(59,130,246,0.25),inset 0 1px 0 rgba(255,255,255,0.08); animation:countUp 0.8s ease-out 0.8s both; }
+.rate-label { font-size:24px; color:rgba(147,197,253,0.85); font-weight:600; margin-bottom:10px; }
+.rate-value { font-size:88px; font-weight:900; background:linear-gradient(135deg,#93c5fd,#c4b5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; margin-bottom:8px; }
+.rate-note { font-size:21px; color:rgba(147,197,253,0.65); }
+.compare-box { background:rgba(255,255,255,0.05); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(167,139,250,0.18); border-radius:18px; padding:24px 28px; }
+.compare-title { font-size:24px; font-weight:800; color:#c4b5fd; margin-bottom:16px; }
+.compare-row { display:flex; gap:16px; align-items:center; padding:10px 0; border-bottom:1px solid rgba(167,139,250,0.1); }
+.compare-row:last-child { border-bottom:none; }
+.compare-label { font-size:22px; color:rgba(167,139,250,0.7); font-weight:600; width:180px; }
+.compare-val { font-size:23px; color:rgba(220,210,255,0.9); font-weight:700; }
+.dual-purpose { background:rgba(59,130,246,0.1); border:1px solid rgba(59,130,246,0.3); border-radius:16px; padding:20px 26px; }
+.dual-text { font-size:23px; color:rgba(210,200,255,0.88); line-height:1.6; }
+</style>
+<div class="slide">
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div><div class="top-bar"></div>
+<div class="header">
+<div class="method-badge">&#128203;</div>
+<div><div class="method-num">Quantitative Method &#8212; 04</div><div class="method-title">Statutory Liquidity Ratio (SLR)</div></div>
+</div>
+<div class="content-grid">
+<div class="left">
+<div class="def-box"><div class="def-label">&#128214; Definition</div><div class="def-text">SLR is the <strong style="color:#93c5fd">minimum percentage of Net Demand and Time Liabilities (NDTL)</strong> that every scheduled commercial bank must maintain in the form of liquid assets &#8212; cash, gold, or approved government securities &#8212; before providing credit to customers.</div></div>
+<div class="assets-box"><div class="assets-label">&#9989; Eligible Liquid Assets</div><div class="asset-chips"><div class="asset-chip">&#128181; Cash</div><div class="asset-chip">&#129351; Gold</div><div class="asset-chip">&#128220; Govt. Securities</div><div class="asset-chip">&#127963; Treasury Bills</div><div class="asset-chip">&#128202; State Dev. Loans</div></div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Unlike CRR, SLR assets can be held by the bank itself (not deposited with RBI)</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Banks earn returns on SLR assets (especially government securities)</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Serves dual purpose: credit control AND ensuring bank solvency/stability</div></div>
+<div class="point"><div class="point-dot"></div><div class="point-text">Higher SLR forces banks to invest more in govt. securities, reducing lending capacity</div></div>
+</div>
+<div class="right">
+<div class="rate-card"><div class="rate-label">Current SLR (2026)</div><div class="rate-value">18.00%</div><div class="rate-note">Of Net Demand &amp; Time Liabilities (NDTL)</div></div>
+<div class="compare-box">
+<div class="compare-title">&#128202; CRR vs SLR &#8212; Key Differences</div>
+<div class="compare-row"><div class="compare-label">Held with</div><div class="compare-val">Bank itself (not RBI)</div></div>
+<div class="compare-row"><div class="compare-label">Asset type</div><div class="compare-val">Cash, Gold, G-Sec</div></div>
+<div class="compare-row"><div class="compare-label">Interest earned</div><div class="compare-val">Yes (on G-Sec)</div></div>
+<div class="compare-row"><div class="compare-label">Current rate</div><div class="compare-val">18% of NDTL</div></div>
+</div>
+<div class="dual-purpose"><div class="dual-text">&#128161; <strong style="color:#93c5fd">Dual Purpose:</strong> SLR not only controls credit but also ensures banks maintain adequate liquidity to meet depositor demands, safeguarding financial system stability.</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>

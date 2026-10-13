@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Methods of Credit Control by RBI - Slide 5</title>
+    <!-- Google Fonts - Inter for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            height: 1080px;
+            width: 1920px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <style>
+* { font-family:'Inter',sans-serif; box-sizing:border-box; margin:0; padding:0; }
+@keyframes fadeInDown { from{opacity:0;transform:translateY(-35px);}to{opacity:1;transform:translateY(0);} }
+@keyframes fadeInLeft { from{opacity:0;transform:translateX(-50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0;transform:translateX(50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes float      { 0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 40px rgba(124,58,237,0.5);}50%{box-shadow:0 0 80px rgba(124,58,237,0.9);} }
+.slide { width:1920px; height:1080px; background:linear-gradient(135deg,#0a0520 0%,#130840 30%,#1a0d5a 60%,#050e3a 100%); position:relative; overflow:hidden; }
+.orb1 { position:absolute; width:650px; height:650px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.22) 0%,transparent 70%); top:-160px; right:-100px; animation:float 9s ease-in-out infinite; }
+.orb2 { position:absolute; width:450px; height:450px; border-radius:50%; background:radial-gradient(circle,rgba(59,130,246,0.16) 0%,transparent 70%); bottom:-100px; left:-60px; animation:float 11s ease-in-out infinite reverse; }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(100,80,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(100,80,200,0.06) 1px,transparent 1px); background-size:90px 90px; }
+.top-bar { position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg,#7c3aed,#3b82f6,#a855f7,#2563eb); }
+.header { position:absolute; top:34px; left:80px; right:80px; display:flex; align-items:center; gap:28px; animation:fadeInDown 0.8s ease-out 0.2s both; }
+.method-badge { width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#7c3aed,#3b82f6); display:flex; align-items:center; justify-content:center; font-size:38px; animation:pulse-glow 3s ease-in-out infinite; border:2px solid rgba(167,139,250,0.4); flex-shrink:0; }
+.method-num { font-size:22px; color:rgba(167,139,250,0.7); font-weight:600; letter-spacing:3px; text-transform:uppercase; }
+.method-title { font-size:64px; font-weight:900; background:linear-gradient(135deg,#c4b5fd,#93c5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.content-area { position:absolute; top:158px; left:80px; right:80px; bottom:32px; }
+.def-glass { background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(167,139,250,0.2); border-radius:20px; padding:28px 36px; margin-bottom:26px; box-shadow:0 4px 30px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.07); animation:fadeInDown 0.8s ease-out 0.4s both; }
+.def-label { font-size:22px; font-weight:800; color:#c4b5fd; margin-bottom:10px; }
+.def-text { font-size:27px; color:rgba(220,210,255,0.9); line-height:1.65; }
+.two-col { display:flex; gap:36px; }
+.col-glass { flex:1; background:rgba(255,255,255,0.05); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid rgba(167,139,250,0.18); border-radius:22px; padding:30px 34px; box-shadow:0 4px 30px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.07); }
+.col-glass:first-child { animation:fadeInLeft 0.9s ease-out 0.5s both; }
+.col-glass:last-child  { animation:fadeInRight 0.9s ease-out 0.6s both; }
+.col-title { font-size:28px; font-weight:800; color:rgba(167,139,250,0.85); margin-bottom:20px; letter-spacing:1px; }
+.omo-card { border-radius:16px; padding:22px 26px; margin-bottom:16px; }
+.omo-buy { background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.3); }
+.omo-sell { background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); }
+.omo-title { font-size:26px; font-weight:800; margin-bottom:10px; }
+.omo-buy .omo-title { color:#86efac; }
+.omo-sell .omo-title { color:#fca5a5; }
+.omo-text { font-size:23px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.flow-box { background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.25); border-radius:14px; padding:18px 22px; margin-bottom:14px; }
+.flow-title { font-size:23px; font-weight:800; color:#c4b5fd; margin-bottom:8px; }
+.flow-text { font-size:22px; color:rgba(210,200,255,0.85); line-height:1.55; }
+.inst-chips { display:flex; gap:12px; margin-top:14px; flex-wrap:wrap; }
+.inst-chip { padding:10px 22px; border-radius:30px; font-size:21px; font-weight:700; background:rgba(59,130,246,0.2); border:1.5px solid rgba(59,130,246,0.45); color:#93c5fd; }
+</style>
+<div class="slide">
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div><div class="top-bar"></div>
+<div class="header">
+<div class="method-badge">&#128200;</div>
+<div><div class="method-num">Quantitative Method &#8212; 02</div><div class="method-title">Open Market Operations (OMO)</div></div>
+</div>
+<div class="content-area">
+<div class="def-glass"><div class="def-label">&#128214; Definition</div><div class="def-text">Open Market Operations refer to the <strong style="color:#93c5fd">buying and selling of government securities</strong> (bonds, treasury bills) by the RBI in the open market to regulate liquidity and money supply in the banking system on a durable basis.</div></div>
+<div class="two-col">
+<div class="col-glass">
+<div class="col-title">Two Types of OMO</div>
+<div class="omo-card omo-buy"><div class="omo-title">&#128994; OMO Purchase (Buying)</div><div class="omo-text">RBI buys government securities from banks &#8594; Injects liquidity &#8594; Money supply increases &#8594; Interest rates fall &#8594; Credit expands &#8594; Stimulates economic growth</div></div>
+<div class="omo-card omo-sell"><div class="omo-title">&#128308; OMO Sale (Selling)</div><div class="omo-text">RBI sells government securities to banks &#8594; Absorbs liquidity &#8594; Money supply decreases &#8594; Interest rates rise &#8594; Credit contracts &#8594; Controls inflation</div></div>
+</div>
+<div class="col-glass">
+<div class="col-title">Key Features</div>
+<div class="flow-box"><div class="flow-title">&#127919; Purpose</div><div class="flow-text">Manage durable liquidity in the banking system and influence short-term interest rates to achieve monetary policy objectives</div></div>
+<div class="flow-box"><div class="flow-title">&#9889; Mechanism</div><div class="flow-text">Liquidity and interest rates are inversely proportional &#8212; more liquidity lowers rates; less liquidity raises rates</div></div>
+<div class="flow-box"><div class="flow-title">&#128202; Instruments Used</div><div class="flow-text">Government of India dated securities, Treasury Bills, State Development Loans</div></div>
+<div class="inst-chips"><div class="inst-chip">G-Sec Bonds</div><div class="inst-chip">T-Bills</div><div class="inst-chip">SDL</div></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

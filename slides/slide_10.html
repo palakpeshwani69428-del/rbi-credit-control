@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Methods of Credit Control by RBI - Slide 10</title>
+    <!-- Google Fonts - Inter for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        body {
+            height: 1080px;
+            width: 1920px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <style>
+* { font-family:'Inter',sans-serif; box-sizing:border-box; margin:0; padding:0; }
+@keyframes fadeInLeft { from{opacity:0;transform:translateX(-50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0;transform:translateX(50px);}to{opacity:1;transform:translateX(0);} }
+@keyframes float      { 0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);} }
+@keyframes cardIn     { from{opacity:0;transform:translateY(25px);}to{opacity:1;transform:translateY(0);} }
+.slide { width:1920px; height:1080px; background:linear-gradient(135deg,#050e3a 0%,#0d1a5c 30%,#1a0d5a 60%,#0a0520 100%); position:relative; overflow:hidden; }
+.orb1 { position:absolute; width:700px; height:700px; border-radius:50%; background:radial-gradient(circle,rgba(59,130,246,0.2) 0%,transparent 70%); top:-180px; left:-100px; animation:float 9s ease-in-out infinite; }
+.orb2 { position:absolute; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle,rgba(124,58,237,0.16) 0%,transparent 70%); bottom:-120px; right:-80px; animation:float 11s ease-in-out infinite reverse; }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(100,80,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(100,80,200,0.06) 1px,transparent 1px); background-size:90px 90px; }
+.top-bar { position:absolute; top:0; left:0; width:100%; height:8px; background:linear-gradient(90deg,#3b82f6,#7c3aed,#2563eb,#a855f7); }
+.left-panel { position:absolute; top:28px; left:56px; width:780px; bottom:28px; background:rgba(255,255,255,0.05); backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px); border:1px solid rgba(147,197,253,0.22); border-radius:28px; padding:48px 52px; box-shadow:0 8px 60px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08); animation:fadeInLeft 0.9s ease-out 0.2s both; }
+.section-badge { display:inline-flex; align-items:center; gap:12px; background:rgba(59,130,246,0.25); border:1.5px solid rgba(59,130,246,0.5); border-radius:30px; padding:10px 24px; margin-bottom:26px; }
+.badge-text { font-size:22px; color:#93c5fd; font-weight:700; letter-spacing:2px; }
+.main-title { font-size:82px; font-weight:900; line-height:1.05; margin-bottom:26px; color:#e2d9ff; }
+.main-title span { background:linear-gradient(135deg,#93c5fd,#c4b5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.desc { font-size:26px; color:rgba(196,181,253,0.85); line-height:1.7; margin-bottom:30px; }
+.obj-box { background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); border-radius:18px; padding:22px 28px; margin-bottom:18px; }
+.obj-title { font-size:22px; font-weight:800; color:#93c5fd; margin-bottom:10px; letter-spacing:1px; }
+.obj-text { font-size:23px; color:rgba(220,210,255,0.88); line-height:1.65; }
+.vs-box { background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.25); border-radius:16px; padding:18px 24px; }
+.vs-text { font-size:22px; color:rgba(210,200,255,0.88); line-height:1.6; }
+.right-panel { position:absolute; top:28px; left:876px; right:56px; bottom:28px; display:flex; flex-direction:column; gap:18px; animation:fadeInRight 0.9s ease-out 0.4s both; }
+.panel-title { font-size:30px; font-weight:800; color:rgba(147,197,253,0.8); letter-spacing:3px; text-transform:uppercase; margin-bottom:4px; }
+.method-card { background:rgba(255,255,255,0.05); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(147,197,253,0.18); border-radius:18px; padding:26px 30px; display:flex; align-items:center; gap:22px; box-shadow:0 4px 24px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.06); }
+.method-card:nth-child(2){animation:cardIn 0.6s ease-out 0.6s both;} .method-card:nth-child(3){animation:cardIn 0.6s ease-out 0.75s both;} .method-card:nth-child(4){animation:cardIn 0.6s ease-out 0.9s both;} .method-card:nth-child(5){animation:cardIn 0.6s ease-out 1.05s both;}
+.method-icon { font-size:38px; flex-shrink:0; }
+.method-info { flex:1; }
+.method-name { font-size:30px; font-weight:700; color:#e2d9ff; margin-bottom:6px; }
+.method-desc { font-size:22px; color:rgba(147,197,253,0.7); }
+.method-arrow { font-size:28px; color:rgba(59,130,246,0.7); font-weight:700; }
+</style>
+<div class="slide">
+<div class="orb1"></div><div class="orb2"></div><div class="grid"></div><div class="top-bar"></div>
+<div class="left-panel">
+<div class="section-badge"><span>&#127919;</span><span class="badge-text">Section 2 of 2</span></div>
+<div class="main-title">Qualitative<br><span>Methods</span></div>
+<div class="desc">Qualitative (Selective) methods regulate the <strong style="color:#93c5fd">direction and purpose</strong> of credit &#8212; steering it toward or away from specific sectors, without affecting total credit volume.</div>
+<div class="obj-box"><div class="obj-title">&#127919; Primary Objective</div><div class="obj-text">To control the <em>flow</em> of credit into specific sectors &#8212; encouraging lending to priority areas (agriculture, SMEs) while discouraging speculative or unproductive lending.</div></div>
+<div class="obj-box"><div class="obj-title">&#9889; Key Characteristic</div><div class="obj-text">These tools are <strong style="color:#93c5fd">discriminatory</strong> &#8212; they target specific sectors, borrowers, or purposes rather than the economy as a whole.</div></div>
+<div class="vs-box"><div class="vs-text">&#128161; <strong style="color:#93c5fd">Quantitative vs Qualitative:</strong> While quantitative tools control the <em>amount</em> of credit, qualitative tools control the <em>purpose and direction</em> &#8212; together they form a comprehensive credit management framework.</div></div>
+</div>
+<div class="right-panel">
+<div class="panel-title">Qualitative Instruments</div>
+<div class="method-card"><div class="method-icon">&#128208;</div><div class="method-info"><div class="method-name">Margin Requirements</div><div class="method-desc">Collateral cushion between loan value and security value</div></div><div class="method-arrow">&#8594;</div></div>
+<div class="method-card"><div class="method-icon">&#128678;</div><div class="method-info"><div class="method-name">Credit Rationing</div><div class="method-desc">Limiting total credit allocation by commercial banks</div></div><div class="method-arrow">&#8594;</div></div>
+<div class="method-card"><div class="method-icon">&#129309;</div><div class="method-info"><div class="method-name">Moral Suasion</div><div class="method-desc">Informal persuasion through advice and guidelines</div></div><div class="method-arrow">&#8594;</div></div>
+<div class="method-card"><div class="method-icon">&#9878;&#65039;</div><div class="method-info"><div class="method-name">Direct Action</div><div class="method-desc">Coercive enforcement against non-compliant banks</div></div><div class="method-arrow">&#8594;</div></div>
+</div>
+</div>
+</body>
+</html>
