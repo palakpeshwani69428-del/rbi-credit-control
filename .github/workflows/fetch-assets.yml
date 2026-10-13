@@ -1,0 +1,50 @@
+name: fetch-rbi-assets
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download deck assets
+        run: |
+          set -euo pipefail
+          mkdir -p slides
+          echo 'Downloading PPTX...'
+          curl -fL --retry 3 -o rbi_credit_control_v6.pptx "https://static.teamily.ai/files/1eb6004a-9803-4655-a89a-f55c15638d64/rbi_credit_control_v6.pptx"
+          echo 'Downloading PDF...'
+          curl -fL --retry 3 -o rbi_credit_control_v6.pdf "https://static.teamily.ai/files/4fb1e738-d086-490a-a71d-2c627c37daac/rbi_credit_control_v6.pdf"
+          echo 'Downloading HTML slides...'
+          for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14; do
+            curl -fL --retry 3 -o "slides/slide_${i}.html" "https://static.teamily.ai/sites/3242af8f-66ae-402c-987d-a504dfec602e/presentations/rbi_credit_control_v6/slide_${i}.html"
+          done
+          ls -la
+          ls -la slides
+
+      - name: Strip CDN-injected media guard script
+        run: |
+          set -euo pipefail
+          perl -0pi -e 's/<script\b[^>]*data-tmly-media-guard[^>]*>.*?<\/script>//gs' slides/*.html
+          if grep -rl "tmly" slides/; then echo 'Injected guard still present'; exit 1; fi
+          echo 'All slides clean.'
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m "feat: add RBI credit control deck (PPTX, PDF) and HTML slides"
+            git push
+          fi
